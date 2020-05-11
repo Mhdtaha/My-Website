@@ -32,14 +32,6 @@ img{
     list-style: none;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-#my-form2 {
-
-    display: grid;
-    grid-gap: 20px;
-    padding: 0;
-    list-style: none;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
 .main-nav a{
     display: block;
     text-decoration: none;
@@ -132,6 +124,7 @@ img{
     display: grid;
     grid-gap: 20px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   
 }
 .portfolio img {
     width: 100%;
@@ -157,9 +150,6 @@ footer {
     .main-nav ul {
         grid-template-columns: 1fr;
  
-   }
-   .info {
-    grid-template-columns: 1fr;
 }
 .info .btn{
     display: block;
@@ -175,4 +165,95 @@ footer {
         'top-box-a'
         'top-box-b';
     }
+}
+.info{
+     background-color: #f5f6f8;
+     display: grid;
+     grid-gap: 20px;
+     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+     padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.info h2{
+    font-size: 2rem;
+    margin-bottom: 0;
+    color:black;
+
+}
+ 
+#my-form4 {
+    background: #f4f4f4;
+        margin: auto;
+        width: 300px;
+        overflow: auto;
+        padding: 3rem 2rem;
+  }
+  
+  #my-form4 label {
+    display: block;
+  }
+  
+  #my-form4 input[type='text'] {
+    width: 105%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  .btn5 {
+    display: block;
+    width: 105%;
+    padding: 10px 15px;
+    border: 0;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+  }
+  
+  .btn5:hover {
+    background: #444;
+  }
+  
+  .bg-dark {
+    background: #333;
+    color: #fff;
+  }
+  
+  .error {
+    background: orangered;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+  }
+  .signUp {
+    text-align: right;
+    padding: 1.5rem 2rem;
+    float: right;
+  }
+  .disclaimer {
+    background-color: #f8d300;
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: 1fr;
+  }
+  .disclaimer a{
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: #eb475e;
+    font-size: 1.1rem;
+}
+.disclaimer p{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    text-align: center;
 }
