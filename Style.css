@@ -224,7 +224,7 @@ footer {
   }
   
   .error {
-    background: orangered;
+    background: rgb(160, 153, 151);
     color: #fff;
     padding: 5px;
     margin: 5px;

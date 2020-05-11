@@ -1,22 +1,25 @@
-const myForm = document.querySelector('#my-form');
+const myForm = document.querySelector('#my-form4');
 const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
 const msg = document.querySelector( '.msg');
 const userList = document.querySelector('#users');
 
+
 myForm.addEventListener('submit', onSubmit);
 
 function onSubmit(e){
     e.preventDefault ();
-    if (nameInput.value ==='' || emailInput.value === ''){
+
+  if (nameInput.value ==='' || emailInput.value === ''){
 
   msg.classList.add ('error')
         msg.innerHTML = 'Please Enter Fields';
 
-        setTimeout(() => msg.remove(), 3000)
+        setTimeout(() => msg.remove(), 3000);
       //alert('please enter fields');
    
-}else {
+}
+else {
     const li = document.createElement('li');
     li.appendChild(document.createTextNode
       (`${nameInput.value}: ${emailInput.value}`));
